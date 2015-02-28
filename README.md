@@ -28,6 +28,7 @@ social:
   twitter: https://twitter.com/**profile**
   google+: https://plus.google.com/**profile**
 ```
+
 ####Fancybox
 ``` yml
 fancybox: true
@@ -38,23 +39,7 @@ fancybox: true
 fitvids: true
 ```
 
-####RSS
-Install hexo-generator-feed:
-
-``` bash
-$ npm install hexo-generator-feed --save
-```
-
-Add in `_config.yml`:
-
-``` yml
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-```
-
-###Post config
+###Per post config
 ####Post cover image
 Add in the Frontend-matter:
 ``` yml
@@ -62,32 +47,18 @@ cover: path/to/image
 ```
 
 ####Fancybox
-Load plugin per post.  
 Add in the Frontend-matter:
 ``` yml
 fancybox: true
 ```
 
 ####fitvids
-Load plugin per post.  
 Add in the Frontend-matter:
 ``` yml
 fitvids: true
 ```
 
 For more configuration settings read the [hexo documentation](http://hexo.io/docs/configuration.html).
-
-## Miscellaneous
-
-###Not implemented in gost-casper
-- Gallery post
-- Link post
-- Archives
-- Categories
-- Search
-
-### Tested with
-- hexo 3.0.0-rc.4
 
 ## Copyright & License
 

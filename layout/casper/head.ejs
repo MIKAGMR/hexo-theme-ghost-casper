@@ -23,6 +23,7 @@
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%- open_graph({twitter_id: theme.twitter_profile, google_plus: theme.googleplus_profile, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <!-- build:css css/screen.css -->
   <link rel="stylesheet" type="text/css" href="<%- config.root %>css/screen.css" />
   <% if (theme.fancybox || page.fancybox){ %>
