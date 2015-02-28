@@ -1,0 +1,15 @@
+<section class="author">
+    <h4><%- config.author %></h4>
+    <p><%- theme.bio %></p>
+    <% if (theme.location || theme.website) {%>
+    <div class="author-meta">
+      <% if (theme.location) {%><span class="author-location icon-location"><%- theme.location %></span><% } %>
+      <% if (theme.website) {%><span class="author-link icon-link"><a href="<%- theme.website %>"><%- theme.website %></a></span><% } %>
+    <% } %>
+      <section>
+        <% for (var i in theme.social){ %>
+          <a href="<%-theme.social[i] %>" class="author-social"><%- i %></a>
+        <% } %>
+      </section>
+    </div>
+</section>
