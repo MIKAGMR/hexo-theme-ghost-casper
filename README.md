@@ -30,16 +30,23 @@ social:
 ```
 
 ####Fancybox
+Load plugin per post.
+Remove entry from theme `_config.yml`.  
+Add in the Frontend-matter:
 ``` yml
 fancybox: true
 ```
 
 ####fitvids
+Load plugin per post.  
+Remove entry from theme `_config.yml`.  
+Add in the Frontend-matter:
 ``` yml
 fitvids: true
 ```
 
 ###Per post config
+
 ####Post cover image
 Add in the Frontend-matter:
 ``` yml
@@ -47,12 +54,16 @@ cover: path/to/image
 ```
 
 ####Fancybox
+Load plugin per post.
+Remove entry from theme `_config.yml`.  
 Add in the Frontend-matter:
 ``` yml
 fancybox: true
 ```
 
 ####fitvids
+Load plugin per post.  
+Remove entry from theme `_config.yml`.  
 Add in the Frontend-matter:
 ``` yml
 fitvids: true

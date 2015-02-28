@@ -4,10 +4,11 @@ bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo tur
 location: Location
 website: Website
 
+# Add social network profile links
 social:
-  twitter: https://twitter.com/
-  google+: https://plus.google.com/
-  github: https://github.com/
+  twitter: https://twitter.com/**profile**
+  google+: https://plus.google.com/**profile**
+  github: https://github.com/**profile**
 
 #opengraph
 twitter_profile: 
