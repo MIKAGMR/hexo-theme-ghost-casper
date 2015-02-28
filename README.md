@@ -39,7 +39,6 @@ fancybox: true
 
 ####fitvids
 Load plugin per post.  
-Remove entry from theme `_config.yml`.  
 Add in the Frontend-matter:
 ``` yml
 fitvids: true
