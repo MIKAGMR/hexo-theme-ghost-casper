@@ -39,7 +39,7 @@
 
         function updateImageWidth() {
             var $this = $(this),
-                contentWidth = $postContent.outerWidth(), // Width of the content
+                contentWidth = $(".post-content").outerWidth(), // Width of the content
                 imageWidth = this.naturalWidth; // Original image resolution
 
             if (imageWidth >= contentWidth) {

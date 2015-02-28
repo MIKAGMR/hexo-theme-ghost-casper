@@ -24,12 +24,18 @@
   <meta name="MobileOptimized" content="320" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <%- open_graph({twitter_id: theme.twitter_profile, google_plus: theme.googleplus_profile, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
-  <!-- build:css css/screen.css -->
-  <link rel="stylesheet" type="text/css" href="<%- config.root %>css/screen.css" />
+  <!-- build:css <%- config.root %>css/screen.css -->
+ 
+  <%- css('css/screen') %>
   <% if (theme.fancybox || page.fancybox){ %>
   <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
   <% } %>
   <!-- endbuild -->
+  <% if (theme.fancybox || page.fancybox){ %>
+  <!-- build:css <%- config.root %>fancybox/jquery.fancybox.css -->
+  <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
+  <!-- endbuild -->
+  <% } %>
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
   <meta name="generator" content="<%- config.title %>">
   <% if (config.rss) { %>
