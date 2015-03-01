@@ -1,0 +1,11 @@
+<% if (post.photos && post.photos.length){ %>
+<div class="post-gallery">
+  <div class="post-gallery-photos">
+    <% post.photos.forEach(function(photo, i){ %>
+      <a class="post-gallery-img fancybox" href="<%- url_for(photo) %>" rel="gallery_<%= post._id %>">
+        <img src="<%- url_for(photo) %>">
+      </a>
+    <% }) %>
+  </div>
+</div>
+<% } %>

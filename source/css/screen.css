@@ -1228,7 +1228,20 @@ body:not(.post-template) .post-title {
 .post-template .content {
     overflow: hidden;
 }
-
+/* Gallery Image*/
+.post-template .post-gallery {
+  position: relative;
+}
+.post-template .post-gallery-photos {
+    position: relative;
+    overflow: hidden;
+}
+.post-template .post-gallery-img {
+    display: none;
+}
+.post-template .post-gallery-img:first-child {
+    display: block;
+}
 /* Tweak the .post wrapper style */
 .post-template .post {
     margin-top: 0;

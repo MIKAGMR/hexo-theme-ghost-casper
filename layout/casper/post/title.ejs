@@ -6,6 +6,6 @@
 
 <% } else if (post.title){ %>
   <h2 class="class_name">
-    <a href="<%- url_for(post.title) %>"><%- post.title %></a>
+    <a href="<%- url_for(post.path) %>"><%- post.title %></a>
   </h2>
 <% } %>
