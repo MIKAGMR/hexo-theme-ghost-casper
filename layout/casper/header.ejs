@@ -1,4 +1,4 @@
-<header class="main-header <% if (page.title) { %>post-head<% } %> <% if (page.title && !page.cover) { %>no-cover<% } %>" <% if (!page.title && theme.cover) { %> style="background-image: url(<%- theme.cover %>)" <% } %><% if (page.title && page.cover) { %> style="background-image: url(<%- page.cover %>)" <% } %>>
+<header class="main-header <% if (page.title) { %>post-head<% } %> <% if (page.title && !page.cover) { %>no-cover<% } %><% if (!page.title && page.current>1) { %>small-cover<% }%>" <% if (!page.title && theme.cover) { %> style="background-image: url(<%- theme.cover %>)" <% } %><% if (page.title && page.cover) { %> style="background-image: url(<%- page.cover %>)" <% } %>>
     <nav class="main-nav <% if (!page.title || page.cover) { %>overlay<% } %> clearfix">
         <% if (!page.title) { %><a class="blog-logo" href="<%- config.root %>"><%- theme.title %></a><% } %>
         <% if (page.title) { %><a class="back-button icon-arrow-left" href="<%- config.root %>">Home</a><% } %>
