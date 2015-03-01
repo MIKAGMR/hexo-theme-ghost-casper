@@ -2,9 +2,11 @@
 <main id="content" class="content" role="main">
   <% page.posts.each(function(post) { %>
   <article class="post">
+    <% if (post.link || post.title){ %>
     <header class="post-header">
-      <h2 class="post-title"><a href="<%- config.root %><%- post.path %>"><%- post.title %></a></h2>
+      <%- partial('post/title', {class_name: 'post-title', post: post}) %>
     </header>
+    <% } %>
     <section class="post-excerpt">
       <p>
       <% if (post.excerpt){ %>
@@ -15,7 +17,7 @@
       </p>
       <% if (theme.excerpt_link) { %>
       <p>
-          <a href="<%- config.root %><%- post.path %>" class="excerpt-link"><%= theme.excerpt_link %>...</a>
+          <a href="<%- url_for(post.path) %>" class="excerpt-link"><%= theme.excerpt_link %>...</a>
       </p>
       <% } %>
     </section>

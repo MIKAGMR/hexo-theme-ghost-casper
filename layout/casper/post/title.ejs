@@ -1,0 +1,11 @@
+
+<% if (post.link){ %>
+  <h2 class="class_name">
+    <a href="<%- url_for(post.link) %>"  target="_blank"><%- post.title %></a>
+  </h2>
+
+<% } else if (post.title){ %>
+  <h2 class="class_name">
+    <a href="<%- url_for(post.title) %>"><%- post.title %></a>
+  </h2>
+<% } %>
