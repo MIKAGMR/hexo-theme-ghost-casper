@@ -1224,7 +1224,13 @@ body:not(.post-template) .post-title {
     margin: 0;
     border: none;
 }
-
+.post-template .post-updated {
+  font-weight: bold;
+  display: block;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+}
 /* Stop .full-img from creating horizontal scroll - slight hack due to
    imperfections with browser width % calculations and rounding */
 .post-template .content {

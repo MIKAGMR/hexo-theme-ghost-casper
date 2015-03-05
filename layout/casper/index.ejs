@@ -1,13 +1,13 @@
 
 <main id="content" class="content" role="main">
   <% page.posts.each(function(post) { %>
-  <article class="post">
+  <article class="post" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
     <% if (post.link || post.title){ %>
     <header class="post-header">
       <%- partial('post/title', {class_name: 'post-title', post: post}) %>
     </header>
     <% } %>
-    <section class="post-excerpt">
+    <section class="post-excerpt" itemprop="description articleBody">
       <p>
       <% if (post.excerpt){ %>
         <%- post.excerpt %>
