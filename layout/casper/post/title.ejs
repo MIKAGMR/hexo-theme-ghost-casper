@@ -1,11 +1,11 @@
 
 <% if (post.link){ %>
-  <h2 class="class_name" itemprop="name">
+  <h2 class="post-title" itemprop="name">
     <a href="<%- url_for(post.link) %>"  target="_blank" itemprop="url"><%- post.title %></a>
   </h2>
 
 <% } else if (post.title){ %>
-  <h2 class="class_name" itemprop="name">
+  <h2 class="post-title" itemprop="name">
     <a href="<%- url_for(post.path) %>"><%- post.title %></a>
   </h2>
 <% } %>
