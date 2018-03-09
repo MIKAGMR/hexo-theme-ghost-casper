@@ -5,20 +5,20 @@ Basic structure from [hexo-theme-casper](https://github.com/kywk/hexo-theme-casp
 [Demo](http://mikagmr.github.io/hexo-theme-ghost-casper-demo/)
 
 
-##Installation
+## Installation
 
-###Install
+### Install
 
 ``` bash
 $ git clone https://github.com/MIKAGMR/hexo-theme-ghost-casper.git themes/ghost-casper
 ```
 
-###Enable
+### Enable
 
 Change `theme` setting in `_config.yml` to `ghost-casper`.
 
-##Configuration
-###Global config
+## Configuration
+### Global config
 Add in theme `_config.yml`:
 
 ``` yml
@@ -32,7 +32,7 @@ social:
   google+: https://plus.google.com/**profile**
 ```
 
-####Fancybox
+#### Fancybox
 Load plugin per post.
 Remove entry from theme `_config.yml`.  
 Add in the Frontend-matter:
@@ -40,22 +40,22 @@ Add in the Frontend-matter:
 fancybox: true
 ```
 
-####fitvids
+#### fitvids
 Load plugin per post.  
 Add in the Frontend-matter:
 ``` yml
 fitvids: true
 ```
 
-###Per post config
+### Per post config
 
-####Post cover image
+#### Post cover image
 Add in the Frontend-matter:
 ``` yml
 cover: path/to/image
 ```
 
-####Fancybox
+#### Fancybox
 Load plugin per post.
 Remove entry from theme `_config.yml`.  
 Add in the Frontend-matter:
@@ -63,7 +63,7 @@ Add in the Frontend-matter:
 fancybox: true
 ```
 
-####fitvids
+#### fitvids
 Load plugin per post.  
 Remove entry from theme `_config.yml`.  
 Add in the Frontend-matter:
